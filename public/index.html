@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <script
       src="https://kit.fontawesome.com/1076e21586.js"
       crossorigin="anonymous"
@@ -13,50 +13,54 @@
     <h1 id="heading">Task List</h1>
     <form id="add-task-form">
       <div class="add-task">
-      Add Task:   <input type="text" id="task-text-input" placeholder="Task" />
-    </div>
-    <div class="add-task">
-      Add Priority (1-9):   <input type="number" id="task-priority-input" placeholder="Priority" />
-    </div>
+        Add Task: <input type="text" id="task-text-input" placeholder="Task" />
+      </div>
+      <div class="add-task">
+        Add Priority (1-9):
+        <input type="number" id="task-priority-input" placeholder="Priority" />
+      </div>
       <button type="submit">Add Task</button>
     </form>
-     <!-- main div -->
-     <div id="main_container">
+    <!-- main div -->
+    <div id="main_container">
       <h2>View Tasks</h2>
-    <div class="inner_container">
-      <i class="fa-solid fa-check"></i><label class="inner_cont_heading">Completed </label><span id="cmp"></span>
-      <div class="inner_div_cont">
-        <h4>
-        All completed Tasks
-      </h4>
-        <ul id="comp_tasks"></ul>
+      <div class="inner_container">
+        <i class="fa-solid fa-check"></i
+        ><label class="inner_cont_heading">Completed </label
+        ><span id="cmp"></span>
+        <div class="inner_div_cont">
+          <h4>All completed Tasks</h4>
+          <ul id="comp_tasks"></ul>
+        </div>
+      </div>
+      <div class="inner_container">
+        <i class="fa-solid fa-xmark"></i
+        ><label class="inner_cont_heading">Canceled </label
+        ><span id="cnc"></span>
+        <div class="inner_div_cont">
+          <h4>All canceled Tasks</h4>
+          <ul id="cnc_tasks"></ul>
+        </div>
+      </div>
+      <div class="inner_container">
+        <i class="fa-solid fa-trash"></i
+        ><label class="inner_cont_heading">Deleted </label
+        ><span id="dlt"></span>
+        <div class="inner_div_cont">
+          <h4>All deleted Tasks</h4>
+          <ul id="dlt_tasks"></ul>
+        </div>
+      </div>
+      <div class="inner_container">
+        <i class="fa-regular fa-hourglass-half"></i
+        ><label class="inner_cont_heading">Pending </label>
+        <span id="pnd"></span>
+        <div class="inner_div_cont">
+          <h4>All pending Tasks</h4>
+          <ul id="pnd_tasks"></ul>
+        </div>
       </div>
     </div>
-    <div class="inner_container">
-      <i class="fa-solid fa-xmark"></i><label class="inner_cont_heading">Canceled </label><span id="cnc"></span>
-      <div class="inner_div_cont">
-      <h4>
-        All canceled Tasks
-      </h4>
-        <ul id="cnc_tasks"></ul>
-      </div>
-    </div>
-    <div class="inner_container">
-      <i class="fa-solid fa-trash"></i><label class="inner_cont_heading">Deleted </label><span id="dlt"></span>
-      <div class="inner_div_cont">
-        <h4>All deleted Tasks</h4>
-        <ul id="dlt_tasks"></ul>
-      </div>
-    </div>
-    <div class="inner_container">
-      <i class="fa-regular fa-hourglass-half"></i><label class="inner_cont_heading">Pending </label>
-      <span id="pnd"></span>
-      <div class="inner_div_cont">
-        <h4>All pending Tasks</h4>
-        <ul id="pnd_tasks"></ul>
-      </div>
-    </div>
-  </div>
 
     <script>
       const compTask = document.querySelector("#comp_tasks");
